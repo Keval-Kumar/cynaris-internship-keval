@@ -22,3 +22,7 @@ __pycache__/
 # System files
 .DS_Store
 Thumbs.db
+
+
+# Private internship analysis
+/notebooks/analysis_day5.ipynb
