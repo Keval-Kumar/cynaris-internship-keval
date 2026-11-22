@@ -1,0 +1,24 @@
+
+# Company and healthcare data
+/data/
+/output/
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
