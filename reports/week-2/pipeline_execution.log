@@ -1,0 +1,32 @@
+2026-11-26 10:31:07,344 - INFO - Starting data pipeline
+2026-11-26 10:31:07,346 - INFO - Dataset loaded successfully
+2026-11-26 10:31:07,346 - INFO - Rows: 400, Columns: 14
+2026-11-26 10:31:07,349 - INFO - no_missing_values: PASS
+2026-11-26 10:31:07,350 - INFO - unique_record_ids: PASS
+2026-11-26 10:31:07,350 - INFO - non_negative_bed_values: PASS
+2026-11-26 10:31:07,350 - INFO - attendance_percentages_valid: PASS
+2026-11-26 10:31:07,350 - INFO - non_negative_surgery_values: PASS
+2026-11-26 10:31:07,350 - WARNING - occupied_beds_exceed_total_beds: 175 records
+2026-11-26 10:31:07,350 - WARNING - icu_occupied_exceed_icu_capacity: 175 records
+2026-11-26 10:31:07,353 - WARNING - completed_surgeries_exceed_scheduled: 182 records
+2026-11-26 10:31:07,387 - INFO - All pipeline outputs saved successfully
+2026-11-26 10:31:07,387 - INFO - Baseline metrics:
+2026-11-26 10:31:07,388 - INFO - 
+                       metric    value         unit
+                total_records   400.00      records
+              total_hospitals     4.00    hospitals
+            total_departments     9.00  departments
+           total_bed_capacity 25833.00         beds
+          total_occupied_beds 23254.00         beds
+    overall_bed_occupancy_pct    90.02      percent
+       total_icu_bed_capacity  6790.00         beds
+      total_icu_beds_occupied  5925.00         beds
+            icu_occupancy_pct    87.26      percent
+    total_surgeries_scheduled  2978.00    surgeries
+    total_surgeries_completed  2757.00    surgeries
+       surgery_completion_pct    92.58      percent
+average_doctor_attendance_pct    84.95      percent
+ average_nurse_attendance_pct    87.42      percent
+    average_patient_wait_mins    78.66      minutes
+           total_readmissions  1592.00 readmissions
+2026-11-26 10:31:07,389 - INFO - Pipeline execution completed

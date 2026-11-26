@@ -1,0 +1,17 @@
+metric,value,unit
+total_records,400.0,records
+total_hospitals,4.0,hospitals
+total_departments,9.0,departments
+total_bed_capacity,25833.0,beds
+total_occupied_beds,23254.0,beds
+overall_bed_occupancy_pct,90.02,percent
+total_icu_bed_capacity,6790.0,beds
+total_icu_beds_occupied,5925.0,beds
+icu_occupancy_pct,87.26,percent
+total_surgeries_scheduled,2978.0,surgeries
+total_surgeries_completed,2757.0,surgeries
+surgery_completion_pct,92.58,percent
+average_doctor_attendance_pct,84.95,percent
+average_nurse_attendance_pct,87.42,percent
+average_patient_wait_mins,78.66,minutes
+total_readmissions,1592.0,readmissions

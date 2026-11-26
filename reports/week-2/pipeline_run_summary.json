@@ -1,0 +1,27 @@
+{
+    "pipeline": "Week 2 Sunrise Resource Utilisation Pipeline",
+    "source_file": "data\\week-2\\raw\\sunrise_resource_utilisation.csv",
+    "records_processed": 400,
+    "columns_processed": 14,
+    "hospital_count": 4,
+    "department_count": 9,
+    "validation_checks": {
+        "no_missing_values": true,
+        "unique_record_ids": true,
+        "non_negative_bed_values": true,
+        "attendance_percentages_valid": true,
+        "non_negative_surgery_values": true
+    },
+    "all_validation_checks_passed": true,
+    "data_quality_warnings": {
+        "occupied_beds_exceed_total_beds": 175,
+        "icu_occupied_exceed_icu_capacity": 175,
+        "completed_surgeries_exceed_scheduled": 182
+    },
+    "outputs": [
+        "data/week-2/processed/sunrise_resource_utilisation_processed.csv",
+        "reports/week-2/baseline_metrics.csv",
+        "reports/week-2/hospital_metrics.csv",
+        "reports/week-2/department_metrics.csv"
+    ]
+}
