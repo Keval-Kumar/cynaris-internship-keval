@@ -1,0 +1,61 @@
+dataContractSpecification: "0.9.3"
+id: sunrise-resource-utilisation-v1
+info:
+  title: Sunrise Hospital Resource Utilisation
+  owner: "Intern — data producer"
+  consumer: "BI dashboard"
+  description: "Hospital department-level resource utilisation dataset"
+  freshness_sla: "To be agreed with the data owner; not inferred from this static sample"
+models:
+  resource_utilisation:
+    type: table
+    fields:
+      record_id:
+        type: string
+        required: true
+        unique: true
+        classification: internal_identifier
+      hospital:
+        type: string
+        required: true
+        classification: internal
+      department:
+        type: string
+        required: true
+        classification: internal
+      date:
+        type: date
+        required: true
+        classification: internal
+      total_beds:
+        type: integer
+        minimum: 0
+        required: true
+      occupied_beds:
+        type: integer
+        minimum: 0
+        required: true
+      icu_beds_total:
+        type: integer
+        minimum: 0
+        required: true
+      icu_beds_occupied:
+        type: integer
+        minimum: 0
+        required: true
+      doctor_attendance_pct:
+        type: number
+        minimum: 0
+        maximum: 100
+      nurse_attendance_pct:
+        type: number
+        minimum: 0
+        maximum: 100
+    quality_rules:
+      - "record_id must not be null and must be unique"
+      - "occupied_beds must not exceed total_beds"
+      - "attendance percentages must be between 0 and 100"
+      - "waiting time and readmission count must be non-negative"
+  pii_policy:
+    classification: "No direct patient-level identifiers are present in this resource dataset's listed schema"
+    handling: "Review free-text or linked datasets separately before sharing; restrict access to operational data"

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Great Expectations Validation Report</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1050px;
+    margin: 36px auto;
+    padding: 0 20px;
+    color: #222;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0 28px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 9px;
+    text-align: left;
+}
+th { background: #eee; }
+.note {
+    background: #fff7df;
+    padding: 12px;
+    border-left: 4px solid #d99b22;
+}
+</style>
+</head>
+<body>
+
+<h1>Sunrise Resource Utilisation - Great Expectations Report</h1>
+
+<p>Great Expectations version: 1.25.0</p>
+
+<p>Rows checked: 400 | Columns: 14</p>
+
+<h2>Original dataset validation: SUCCESS</h2>
+
+<table>
+<tr>
+<th>Expectation</th>
+<th>Column</th>
+<th>Result</th>
+<th>Unexpected count</th>
+</tr>
+
+<tr><td>expect_column_values_to_not_be_null</td><td>record_id</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_be_unique</td><td>record_id</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_not_be_null</td><td>hospital</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_not_be_null</td><td>department</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_be_between</td><td>total_beds</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_be_between</td><td>occupied_beds</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_be_between</td><td>doctor_attendance_pct</td><td>PASS</td><td>0</td></tr>
+<tr><td>expect_column_values_to_be_between</td><td>nurse_attendance_pct</td><td>PASS</td><td>0</td></tr>
+
+</table>
+
+<h2>Fault injection validation: FAILURE</h2>
+
+<table>
+<tr>
+<th>Injected fault</th>
+<th>Detection result</th>
+</tr>
+
+<tr><td>Null record_id</td><td>DETECTED</td></tr>
+<tr><td>Negative total_beds</td><td>DETECTED</td></tr>
+<tr><td>doctor_attendance_pct above 100</td><td>DETECTED</td></tr>
+
+</table>
+
+<p>
+<strong>All three injected faults detected:</strong>
+True
+</p>
+
+<p class="note">
+The original CSV was not modified.
+Fault injection used a separate in-memory copy.
+The eight expectations above are Great Expectations checks.
+Cross-column bed and ICU business rules require data-owner confirmation
+before enforcement.
+</p>
+
+<p>Machine-readable evidence: great_expectations_validation.json</p>
+
+</body>
+</html>

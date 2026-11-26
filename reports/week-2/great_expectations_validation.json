@@ -1,0 +1,611 @@
+{
+  "great_expectations_version": "1.25.0",
+  "dataset": "data\\week-2\\raw\\sunrise_resource_utilisation.csv",
+  "row_count": 400,
+  "column_count": 14,
+  "expectation_count": 8,
+  "original_validation_success": true,
+  "original_validation": {
+    "success": true,
+    "results": [
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_not_be_null",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "record_id"
+          },
+          "meta": {},
+          "id": "6566c399-0cdc-43c2-97fe-ed23f2c69910",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_unique",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "record_id"
+          },
+          "meta": {},
+          "id": "75d5ebd2-b605-4d64-8210-051cebaa6e5d",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_not_be_null",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "hospital"
+          },
+          "meta": {},
+          "id": "f23dfd21-4ed6-40d1-b2cf-6a28e941f612",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_not_be_null",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "department"
+          },
+          "meta": {},
+          "id": "3a6b223b-9d41-446b-b3d9-7d89b7f16d22",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "total_beds",
+            "min_value": 0.0
+          },
+          "meta": {},
+          "id": "c7178d30-536c-4b4d-b1bf-0959f76df96e",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "occupied_beds",
+            "min_value": 0.0
+          },
+          "meta": {},
+          "id": "cdd3ccba-1a3d-4089-a12a-01cb10b7a280",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "doctor_attendance_pct",
+            "min_value": 0.0,
+            "max_value": 100.0
+          },
+          "meta": {},
+          "id": "04d35a7a-caa2-4c94-85e6-3ce3902d0d0e",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "nurse_attendance_pct",
+            "min_value": 0.0,
+            "max_value": 100.0
+          },
+          "meta": {},
+          "id": "e3804f80-4754-45a0-9a3e-a1ab589d2408",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      }
+    ],
+    "suite_name": "sunrise_resource_utilisation_suite",
+    "suite_parameters": {},
+    "statistics": {
+      "evaluated_expectations": 8,
+      "successful_expectations": 8,
+      "unsuccessful_expectations": 0,
+      "success_percent": 100.0
+    },
+    "meta": {
+      "great_expectations_version": "1.25.0",
+      "batch_spec": {
+        "batch_data": "PandasDataFrame"
+      },
+      "batch_markers": {
+        "ge_load_time": "20261126T044033.905941Z",
+        "pandas_data_fingerprint": "a294082953ac4ffc6aa4f41469027644"
+      },
+      "active_batch_definition": {
+        "datasource_name": "sunrise_pandas",
+        "data_connector_name": "fluent",
+        "data_asset_name": "resource_utilisation",
+        "batch_identifiers": {
+          "dataframe": "<DATAFRAME>"
+        }
+      },
+      "validation_id": "bbfd8eb9-f26d-4b02-85b4-e5a553bad616",
+      "checkpoint_id": null,
+      "run_id": {
+        "run_name": null,
+        "run_time": "2026-11-26T10:10:33.990683+05:30"
+      },
+      "validation_time": "2026-11-26T04:40:33.990683+00:00",
+      "batch_parameters": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "id": null
+  },
+  "fault_injection_validation_success": false,
+  "fault_injection_validation": {
+    "success": false,
+    "results": [
+      {
+        "success": false,
+        "expectation_config": {
+          "type": "expect_column_values_to_not_be_null",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "record_id"
+          },
+          "meta": {},
+          "id": "6566c399-0cdc-43c2-97fe-ed23f2c69910",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 1,
+          "unexpected_percent": 0.25,
+          "partial_unexpected_list": [
+            null
+          ],
+          "partial_unexpected_counts": [
+            {
+              "value": null,
+              "count": 1
+            }
+          ],
+          "partial_unexpected_index_list": [
+            0
+          ]
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_unique",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "record_id"
+          },
+          "meta": {},
+          "id": "75d5ebd2-b605-4d64-8210-051cebaa6e5d",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 1,
+          "missing_percent": 0.25,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_not_be_null",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "hospital"
+          },
+          "meta": {},
+          "id": "f23dfd21-4ed6-40d1-b2cf-6a28e941f612",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_not_be_null",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "department"
+          },
+          "meta": {},
+          "id": "3a6b223b-9d41-446b-b3d9-7d89b7f16d22",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": false,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "total_beds",
+            "min_value": 0.0
+          },
+          "meta": {},
+          "id": "c7178d30-536c-4b4d-b1bf-0959f76df96e",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 1,
+          "unexpected_percent": 0.25,
+          "partial_unexpected_list": [
+            -1
+          ],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.25,
+          "unexpected_percent_nonmissing": 0.25,
+          "partial_unexpected_counts": [
+            {
+              "value": -1,
+              "count": 1
+            }
+          ],
+          "partial_unexpected_index_list": [
+            1
+          ]
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "occupied_beds",
+            "min_value": 0.0
+          },
+          "meta": {},
+          "id": "cdd3ccba-1a3d-4089-a12a-01cb10b7a280",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": false,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "doctor_attendance_pct",
+            "min_value": 0.0,
+            "max_value": 100.0
+          },
+          "meta": {},
+          "id": "04d35a7a-caa2-4c94-85e6-3ce3902d0d0e",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 1,
+          "unexpected_percent": 0.25,
+          "partial_unexpected_list": [
+            150.0
+          ],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.25,
+          "unexpected_percent_nonmissing": 0.25,
+          "partial_unexpected_counts": [
+            {
+              "value": 150.0,
+              "count": 1
+            }
+          ],
+          "partial_unexpected_index_list": [
+            2
+          ]
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      },
+      {
+        "success": true,
+        "expectation_config": {
+          "type": "expect_column_values_to_be_between",
+          "kwargs": {
+            "batch_id": "sunrise_pandas-resource_utilisation",
+            "column": "nurse_attendance_pct",
+            "min_value": 0.0,
+            "max_value": 100.0
+          },
+          "meta": {},
+          "id": "e3804f80-4754-45a0-9a3e-a1ab589d2408",
+          "severity": "critical"
+        },
+        "result": {
+          "element_count": 400,
+          "unexpected_count": 0,
+          "unexpected_percent": 0.0,
+          "partial_unexpected_list": [],
+          "missing_count": 0,
+          "missing_percent": 0.0,
+          "unexpected_percent_total": 0.0,
+          "unexpected_percent_nonmissing": 0.0,
+          "partial_unexpected_counts": [],
+          "partial_unexpected_index_list": []
+        },
+        "meta": {},
+        "exception_info": {
+          "raised_exception": false,
+          "exception_traceback": null,
+          "exception_message": null
+        }
+      }
+    ],
+    "suite_name": "sunrise_resource_utilisation_suite",
+    "suite_parameters": {},
+    "statistics": {
+      "evaluated_expectations": 8,
+      "successful_expectations": 5,
+      "unsuccessful_expectations": 3,
+      "success_percent": 62.5
+    },
+    "meta": {
+      "great_expectations_version": "1.25.0",
+      "batch_spec": {
+        "batch_data": "PandasDataFrame"
+      },
+      "batch_markers": {
+        "ge_load_time": "20261126T044034.000605Z",
+        "pandas_data_fingerprint": "dadd117bc1385af66b34d38d22538b02"
+      },
+      "active_batch_definition": {
+        "datasource_name": "sunrise_pandas",
+        "data_connector_name": "fluent",
+        "data_asset_name": "resource_utilisation",
+        "batch_identifiers": {
+          "dataframe": "<DATAFRAME>"
+        }
+      },
+      "validation_id": "bbfd8eb9-f26d-4b02-85b4-e5a553bad616",
+      "checkpoint_id": null,
+      "run_id": {
+        "run_name": null,
+        "run_time": "2026-11-26T10:10:34.043942+05:30"
+      },
+      "validation_time": "2026-11-26T04:40:34.043942+00:00",
+      "batch_parameters": {
+        "dataframe": "<DATAFRAME>"
+      }
+    },
+    "id": null
+  },
+  "injected_faults_detected": {
+    "Null record_id": true,
+    "Negative total_beds": true,
+    "doctor_attendance_pct above 100": true
+  },
+  "all_three_faults_detected": true,
+  "note": "The original CSV was not modified. Fault injection was performed on a separate copy. Cross-column bed and ICU rules require data-owner confirmation before enforcement."
+}
